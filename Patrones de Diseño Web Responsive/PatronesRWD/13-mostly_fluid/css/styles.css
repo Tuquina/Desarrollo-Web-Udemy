@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/** CODIGO AQUI **/
+
+/* El contenido fluye sobre el espacio que hay disponible */
+
+.contenedor {   
+    max-width: 120rem;  /* Máx de 1200px */
+    /* width: 1200px; Este contenido no fluye */
+    width: 95%; /* Este contenido fluye*/
+    margin: 0 auto; /* Centrar */
+}
+
+@media (min-width: 768px) {     /* Algunas personas hacen esto con 2 mq */
+    .contenedor {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor {
+        width: 60%;
+    }
+}
+
+img {
+    /*width: 100%;  Esto siempre es imagen responsive */
+    max-width: 100%;    /* No la fuerza a crecer a la imagen */
+}
+
+/* Si quiero que la imagen vaya hasta las esquinas tendría que sacarla
+del contenedor */
